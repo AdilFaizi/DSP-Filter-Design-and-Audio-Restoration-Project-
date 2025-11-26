@@ -1,5 +1,7 @@
-% Audio Restoration Section
-% by Adil Faizi
+% Audio Restoration Section 
+% by Adil Faizi, 220290664
+% By using frequency domain plot analysis, we can determine that two specific frequencies stand out in this sound signal. Then utilizing a notch filter to reduce their magnitudes
+
 
 [X, fs] = audioread("music_noisy.wav");
 
@@ -37,4 +39,5 @@ xlim([0 fs/2]);
 sound(filtered_X, fs);
 %write sound file
 audiowrite("filtered_noisysound.wav", filtered_X, fs);
+
 
