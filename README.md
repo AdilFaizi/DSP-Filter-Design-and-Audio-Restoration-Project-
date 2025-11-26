@@ -22,3 +22,12 @@ Measured passband/stopband ripple, attenuation, and reconstruction quality. Cond
 Example of creating the FIR Filter under certain requirements and the plot in the frequency domain:
 
 ![alt text](FIR-Filter-Example.png)
+
+
+Sound Examples
+<audio controls>
+  <source src="music_noisy.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="filtered_noisysound.wav" type="audio/mpeg">
+</audio>
