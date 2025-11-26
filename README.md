@@ -26,5 +26,5 @@ Example of creating the FIR Filter under certain requirements and the plot in th
 
 Download Raws:
 Sound Examples
-[▶️ Listen to audio](After_Before_Sounds/filtered_noisysound.wav)
-[▶️ Listen to audio](After_Before_Sounds/music_noisy.wav)
+[Listen to filtered audio](After_Before_Sounds/filtered_noisysound.wav)
+[Listen to original audio](After_Before_Sounds/music_noisy.wav)
