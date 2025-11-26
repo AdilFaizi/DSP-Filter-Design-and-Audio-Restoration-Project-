@@ -1,3 +1,6 @@
+% Audio Restoration Section
+% by Adil Faizi
+
 [X, fs] = audioread("music_noisy.wav");
 
 % FFT of original
@@ -11,6 +14,7 @@ title('FFT of Noisy Music');
 xlim([0 fs/2]);
 
 
+%Utilizing the FFT to detect any unnatural magnitudes, and then applying the notch filter on these specific places.
 frequenciesToNotch = [1102.49, 2756.27];
 filtered_X = X;
 for k = 1:length(frequenciesToNotch)
@@ -33,3 +37,4 @@ xlim([0 fs/2]);
 sound(filtered_X, fs);
 %write sound file
 audiowrite("filtered_noisysound.wav", filtered_X, fs);
+
