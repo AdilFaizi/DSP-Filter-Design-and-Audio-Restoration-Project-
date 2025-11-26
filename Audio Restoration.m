@@ -45,8 +45,7 @@ audiowrite("filtered_noisysound.wav", filtered_X, fs);
 %Time Domain Equivalent
 [X, fs] = audioread("music_noisy.wav");
 
-% Using time domain to plot the sound
-t = (0:length(X)-1) / fs; % Create a time vector based on the sampling frequency
+t = (0:length(X)-1) / fs; % create a time based on the sampling frequency
 plot(t, X); % Plot the audio signal in the time domain
 xlabel('Time (s)');
 ylabel('Amplitude');
@@ -86,5 +85,16 @@ filtered_1 = filter(b, 1, X); %yq
 filtered_2 = filter(b2, 1, filtered_1);
 
 sound(Y2, fs);
+
+%plot sound in time domain
+t_filtered = (0:length(filtered_2)-1) / fs; % create a time vector for the filtered signal
+figure;
+plot(t_filtered, filtered_2); % Plot the filtered audio signal in the time domain
+xlabel('Time (s)');
+ylabel('Amplitude');
+title('Filtered Audio Signal in Time Domain');
+
+% Save the filtered audio signal to a WAV file
+audiowrite('filtered_music_time_domain.wav', Y2, fs);
 
 
