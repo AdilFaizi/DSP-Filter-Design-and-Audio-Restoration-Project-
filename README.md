@@ -25,9 +25,5 @@ Example of creating the FIR Filter under certain requirements and the plot in th
 
 
 Sound Examples
-<audio controls>
-  <source src="music_noisy.wav" type="audio/mpeg">
-</audio>
-<audio controls>
-  <source src="filtered_noisysound.wav" type="audio/mpeg">
-</audio>
+[▶️ Listen to audio](filtered_noisysound.wav)
+
