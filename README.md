@@ -17,3 +17,6 @@ Frequency-Domain Suppression: Used STFT-based masks, spectral subtraction, and b
 
 Performance Verification
 Measured passband/stopband ripple, attenuation, and reconstruction quality. Conducted listening tests and visualized the cleaned audio through spectrogram comparison.
+
+
+![alt text](FIR-Filter-Example.png)
