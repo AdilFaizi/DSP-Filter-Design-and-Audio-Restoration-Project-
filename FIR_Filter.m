@@ -1,5 +1,6 @@
 % FIR Filter Example Requirements:
-% Stopband edge 1: 500Hz, Passband edge 1: 1500 Hz, Passband edge 2: 2000 Hz, Stopband edge 2: 3000 Hz, Sampling frequency: 8000 Hz, Pass-band ripple <= 0.01, Stopband ripple from 0 to 500Hz <= 0.01, Stopband ripple from 3000 to 4000Hz <= 0.001
+% Stopband edge 1: 500Hz, Passband edge 1: 1500 Hz, Passband edge 2: 2000 Hz, Stopband edge 2: 3000 Hz, Sampling frequency: 8000 Hz
+% Pass-band ripple <= 0.01, Stopband ripple from 0 to 500Hz <= 0.01, Stopband ripple from 3000 to 4000Hz <= 0.001
 % by Mohammad Adil Faizi
 
 Stopband_edge_1 = 500; 
@@ -32,3 +33,4 @@ h = firpm(N, F, A, W);
 
 
 freqz(h,1); 
+
