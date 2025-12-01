@@ -7,16 +7,16 @@ Bandpass FIR Filter Design
 Designed a bandpass FIR filter using windowing and/or Parks–McClellan methods. Calculated filter length, derived coefficients, and generated magnitude/phase responses to meet precise ripple and attenuation requirements.
 
 Noise Identification in Audio Signals
-Analyzed the noisy .wav file using spectrograms, FFT analysis, and power spectral density to isolate and characterize dominant noise components.
+Analyzed the noisy .wav file using spectrograms, FFT analysis to isolate and characterize dominant noise components.
 
 Two Noise-Removal Approaches
 
-Time-Domain Filtering: Applied FIR filtering and smoothing techniques.
+1. Time-Domain Filtering: Applied FIR filtering and smoothing techniques.
 
-Frequency-Domain Suppression: Used STFT-based masks, spectral subtraction, and band elimination.
+2. Frequency-Domain Suppression: Used FFT based masks, and notch filter
 
 Performance Verification
-Measured passband/stopband ripple, attenuation, and reconstruction quality. Conducted listening tests and visualized the cleaned audio through spectrogram comparison.
+Measured passband/stopband ripple, attenuation, and reconstruction quality. Conducted listening tests and visualized the cleaned audio through comparison.
 
 
 Example of creating the FIR Filter under certain requirements and the plot in the frequency domain:
